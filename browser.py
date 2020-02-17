@@ -20,6 +20,8 @@ def driver():
         display = Display(visible=0, size=(800, 600))
         display.start()
         browser = webdriver.Firefox()
+        driver.maximize_window() //For maximizing window
+        driver.implicitly_wait(20) //gives an implicit wait for 20 seconds
         yield browser
     finally:
         browser.quit()
