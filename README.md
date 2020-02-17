@@ -1,11 +1,11 @@
 #Kroger Google Calendar#
 
 This script, as it stands right now, will update a user's google calendar with
-their relative kroger store's work schedule using greatpeople.me
+their relative kroger store's work schedule using feed.kroger.com
 
 ## Installation
 
-Easiest is to use [this repo](https://github.com/kryptn/kgc) and follow the instructions.
+Easiest is to use [this repo](https://github.com/insanemode/kgc) and follow the instructions.
 
 It's still not easy.
 
