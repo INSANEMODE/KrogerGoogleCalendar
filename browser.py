@@ -137,7 +137,7 @@ class KrogerBrowser(object):
                 self.fix_sessions(browser)
             
             self.navigate(browser, self.schedule_url)
-            self.soup = BeautifulSoup(browser.page_source)
+            self.soup = BeautifulSoup(browser.page_source, features="html.parser")
 
     def update_schedule(self):
         """
