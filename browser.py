@@ -85,8 +85,7 @@ class KrogerBrowser(object):
 
         """
         browser.find_element_by_name('KSWUSER').send_keys(self.euid)
-        browser.find_element_by_name('PWD').send_keys(self.password)
-        browser.find_element_by_xpath("/html/body/div[2]/table/tbody/tr/td[1]/form/div/input[2]").click()
+        browser.find_element_by_name('PWD').send_keys(self.password + Keys.RETURN)
 
     def fix_sessions(self, browser):
         """ Attempts to fix a multiple-session error from the Juniper switch """
