@@ -148,14 +148,14 @@ class KrogerBrowser(object):
         with pantry('data/lazydb.pk') as db:
             for k, v in db.items():
                 if v['start'] < now:
-                    if self.DEBUG: print "Old event removed", v['start']
+                    if self.DEBUG: print ("Old event removed"), v['start']
                     del db[k]
             for k, v in self.schedule.items():
                 if k not in db.keys():
-                    if self.DEBUG: print "New event inserted", v['start']
+                    if self.DEBUG: print ("New event inserted"), v['start']
                     db[k] = v
                 else:
-                    if self.DEBUG: print "Event exists", db[k]['start']
+                    if self.DEBUG: print ("Event exists"), db[k]['start']
 
     def pull(self):
         """ Pulls source, updates into schedule file """
