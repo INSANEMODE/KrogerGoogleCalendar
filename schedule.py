@@ -2,7 +2,7 @@ import json
 import argparse
 from httplib2 import Http
 
-from oauth2client.client import ServiceAccountCredentials
+from oauth2client.service_account import ServiceAccountCredentials
 from apiclient.discovery import build
 from pantry import pantry
 
