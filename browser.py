@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 from pyvirtualdisplay import Display
 from selenium import webdriver
 from pantry import pantry
+from selenium.webdriver.common.keys import Keys
 
 
 @contextmanager
