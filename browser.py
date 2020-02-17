@@ -21,7 +21,7 @@ def driver():
         display.start()
         browser = webdriver.Firefox()
         browser.maximize_window()
-        browser.implicitly_wait(20)
+        browser.implicitly_wait(5)
         yield browser
     finally:
         browser.quit()
