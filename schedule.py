@@ -63,7 +63,7 @@ def update(debug=None):
     with pantry('data/lazydb.pk') as db:
         for k, v in db.items():
             if not v['id']:
-                if debug: print "Adding new event...",
+                if debug: print ("Adding new event..."),
                 result = add_event(v)
                 db[k]['id'] = result['id']
-                if debug: print "Success", result['id']
+                if debug: print ("Success"), result['id']
