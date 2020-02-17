@@ -2,7 +2,7 @@ import json
 import argparse
 from httplib2 import Http
 
-from oauth2client.client import SignedJwtAssertionCredentials
+from oauth2client.client import ServiceAccountCredentials
 from apiclient.discovery import build
 from pantry import pantry
 
@@ -29,7 +29,7 @@ def api_service(endpoint, version):
     with open('data/'+SETTINGS['P12_KEY_FILE']) as f:
         private_key = f.read()
 
-    creds = SignedJwtAssertionCredentials(SETTINGS['GSERVEMAIL'],
+    creds = ServiceAccountCredentials(SETTINGS['GSERVEMAIL'],
                                           private_key,
                                           SETTINGS['SCOPE'])
 
