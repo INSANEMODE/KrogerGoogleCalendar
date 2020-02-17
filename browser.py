@@ -57,7 +57,7 @@ class KrogerBrowser(object):
 
     """
 
-    main_url = 'http://greatpeople.me'
+    main_url = 'https://feed.kroger.com'
     schedule_url = 'https://vpnb-hdc.kroger.com/EmpowerESS/,DanaInfo=myeschedule.kroger.com+Schedule.aspx'
     DEBUG = False
 
